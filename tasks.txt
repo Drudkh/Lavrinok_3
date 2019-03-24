@@ -1,0 +1,63 @@
+Tasks C#
+
+Task 1:
+Create Program and implement method that can generate random Date in defined range. So there should be method with inputs:
+minDate and maxDate. 
+Method should return random DateTime that is between min and max values.
+
+
+Task 2:
+Create class Person with following data:
+Properties
+BirthDate (DateTime type)
+FirstName (string)
+LastName (string)
+HourRate (decimal)
+
+property Age (int) this property should return actual person age that is difference between current date and date of birth 
+property FullName this property should return First and Last name combined.
+
+Create Class PersonsGenerator
+Class should have method Generate that have one parameter: amount. 
+
+This method generates provided amount of objects type Person. Person should contain random name, last name, HourRate (min 1 max 100), BirhDate (in range 1950 - 2019). Try to implement some way to have random names but in case you have problems with it, ask expert.
+
+Implement method: GetPersonInfo()
+This methid should return string with info about user. Info should contain FullName, Age and Potential Salary (per month, month have 160 working hours, in case person is younger than 18, just print info that it's child). 
+
+Make sure that when person is younger than 18 years HourRate property is always return 0. Not because it's free, but because we do not want children to work, let's them have fun while they can
+
+
+Task 3. 
+Use task 2 app to generate 50 persons. Go over this users with Foreach and print information about every person. 
+
+
+Task 4. 
+Create Abstract class PersonsProcessor. This class has one abstract method:
+Process that as parameter takes IEnumerable<Person> as parameter. Method returns VOID type.
+
+Create class SalaryProcessor that inherit PersonsProcessor. This class should implement Process method in following way:
+From given persons select only user that 18 or older. For each user print following information:
+Name, age, Overall earnings (this information calculated in following way, Amount of month till today  160  hour rate)
+Print also info about:
+Highly payed person
+
+Create class AgeStatisticProcessor that inherit PersonsProcessor. This class should implement Process method in following way:
+Print following info:
+Average age
+Oldest person
+Youngest person
+
+Create class NamesProcessor that inherit PersonsProcessor. This class should implement Process method in following way:
+Print information about most common name.
+Print in % how often name used. For example you have 5 guys with following name: Bob, John, Bob, Dilan, Bob, so Bob is 60%, Dilan is 20%, and DIlan is 20%.
+
+
+Task 5:
+Create 3 classes Freelancer, Employee and Subcontractor:
+For each class you need to override HourRate property in following way:
+Freelancer HourRate should return: Base HourRate * 1.5
+Employee: Base HourRate * 1.1
+Subcontractor: Base HourRate * 2.2
+
+Modify Generator from Task 2 so it also creates randomly Freelancer, Employee or subcontractor

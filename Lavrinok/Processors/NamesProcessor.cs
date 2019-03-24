@@ -23,7 +23,7 @@ namespace Lavrinok
             }
             foreach (KeyValuePair<string, int> keyValue in dict)
             {
-                Console.WriteLine("FirstName:" + keyValue.Key + " is used " + 100 * keyValue.Value / persons.Count() + "%");
+                Console.WriteLine("FirstName:" + keyValue.Key + " is used " + 100 * keyValue.Value / persons.Count() + "% times");
             }
         }
     }

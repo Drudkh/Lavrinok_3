@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28714.193
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadacha_2", "Lavrinok\zadacha_2.csproj", "{9EFBC298-20C4-475C-96BA-24F8C7EE809A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadacha_2_5", "Lavrinok\zadacha_2_5.csproj", "{9EFBC298-20C4-475C-96BA-24F8C7EE809A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadacha_1", "zadacha_2\zadacha_1.csproj", "{649C9949-E3EF-4948-8284-A169020A4F8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5F769FCE-29E8-4285-BF83-3F8B83D1B8FD}"
+	ProjectSection(SolutionItems) = preProject
+		tasks.txt = tasks.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

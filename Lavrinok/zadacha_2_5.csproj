@@ -43,14 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgeStatisticProcessor.cs" />
-    <Compile Include="NamesProcessor.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="PersonsGenerator.cs" />
-    <Compile Include="PersonsProcessor.cs" />
+    <Compile Include="Processors\AgeStatisticProcessor.cs" />
+    <Compile Include="Workers\Employee.cs" />
+    <Compile Include="Workers\Freelancer.cs" />
+    <Compile Include="Processors\NamesProcessor.cs" />
+    <Compile Include="Workers\Person.cs" />
+    <Compile Include="Generators\PersonsGenerator.cs" />
+    <Compile Include="Processors\PersonsProcessor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SalaryProcessor.cs" />
+    <Compile Include="Processors\SalaryProcessor.cs" />
+    <Compile Include="Workers\Subcontractor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

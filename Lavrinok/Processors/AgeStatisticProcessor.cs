@@ -20,7 +20,9 @@ namespace Lavrinok
                 if (oldestPerson.BirthDate > ie.Current.BirthDate) oldestPerson = ie.Current;
                 averageAge += ie.Current.Age;
             }
-            Console.WriteLine("Average Age: {0}; Youngest Person: {1}; Oldest Person {2}", averageAge / persons.Count(), youngestPerson.FullName, oldestPerson.FullName);
+            Console.WriteLine("Average Age = {0}: ", averageAge / persons.Count());
+            Console.WriteLine("Youngest Person => {0}:", youngestPerson.FullName);
+            Console.WriteLine("Oldest Person => {0}", oldestPerson.FullName);
         }
     }
 }
