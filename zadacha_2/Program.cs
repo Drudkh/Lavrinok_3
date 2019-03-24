@@ -24,7 +24,7 @@ namespace zadacha_2
                 maxDateTime = date_1;
             }
             System.TimeSpan diff1 = maxDateTime.Subtract(minDateTime);
-            double delta = diff1.TotalDays;-
+            double delta = diff1.TotalDays;
             Random rnd = new Random();
             double new_delta = rnd.Next(0, (int)delta);
             System.TimeSpan diff2 = TimeSpan.FromDays(new_delta);
