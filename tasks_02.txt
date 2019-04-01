@@ -1,0 +1,37 @@
+Task 1:
+In previous labs you have classes that generates Persons. Now you should implement following (Use only Person class, do not use Exntended versions like freelancers or any other):
+Create interface IPersonReader with methods:
+All  - returns all persons
+ById - returns by id
+
+Create interface IPersonWriter with methods:
+Update - updates person
+Delete - deletes person
+
+Create 2 Implementations for IPersonReader interface:
+One for XML and another for JSON file format
+
+Create 2 Implementations for IPersonWriter interface:
+One for XML and another for JSON file format
+
+You will need to think how to create Uniq ID for Persons.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Create Class PeopleManager.
+This manager has constructor that takes 2 parameters with types IPersonReader and IPersonWriter. This manager should use these two objects to operate with data to read and write.
+
+So as result you should do smth like that.
+var xmlReader = new XmlPersonsReader();
+var xmlWriter = new XmlPersonsWriter();
+var manager = new PeopleManager(xmlReader, xmlWriter);
+
+This class should have methods to do following:
+AddPeople - adds array of people. 
+AddPerson - adds one person
+UpdatePeople - Updates data about one person, this method should be able to update information about person.
+Delete - this method should be able to delete
+ByAge - returns all persons in defined min and max age range. (use int values like all between 19 and 21)
+BySalary - returns all persons with salary in defined range
+
+Task2:
+Cover Persons manager with Unit tests

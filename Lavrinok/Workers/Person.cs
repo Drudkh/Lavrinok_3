@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace Lavrinok
 {
+    [Serializable]
     public class Person
     {
         public DateTime BirthDate { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public virtual decimal HourRate { get; set; }
+        public string PersonId { get; set;
+}
+        public Person()
+        { }
         public int Age
         {
             get { return DateTime.Now.Year - BirthDate.Year; }

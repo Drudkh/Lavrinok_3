@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PeopleManager.cs" />
+    <Compile Include="Implemetations\XmlPersonReader.cs" />
+    <Compile Include="Implemetations\XMLPersonWriter.cs" />
+    <Compile Include="Interfaces\IPersonWriter.cs" />
+    <Compile Include="Interfaces\IPersonReader.cs" />
     <Compile Include="Processors\AgeStatisticProcessor.cs" />
     <Compile Include="Workers\Employee.cs" />
     <Compile Include="Workers\Freelancer.cs" />

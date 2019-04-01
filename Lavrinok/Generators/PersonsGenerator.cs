@@ -19,6 +19,7 @@ namespace Lavrinok
             Person[] persons = new Person[amount];
             for (int i = 0; i < amount; i++)
             {
+                Guid id = Guid.NewGuid();
                 int j = rand.Next(0, 2);
                 if (j == 0)
                 { this.person = new Freelancer(); }
@@ -31,6 +32,7 @@ namespace Lavrinok
                 person.LastName = lastNames[rand.Next(0, lastNames.Length - 1)];
                 person.HourRate = (decimal)rand.Next(1, 100);
                 person.BirthDate = new DateTime(rand.Next(1950, 2019), 1, 1);
+                person.PersonId = System.Guid.NewGuid().ToString();
                 persons[i] = person;
             }
 
